@@ -9,7 +9,7 @@ const TodoList = () => {
     <div className="w-[600px] flex items-center justify-center ">
       <div className="flex flex-col w-full gap-2">
         {todos.map((todo) => (
-          <TodoCard key={todo.id} task={todo.task} />
+          <TodoCard key={todo.id} todo={todo} />
         ))}
       </div>
     </div>

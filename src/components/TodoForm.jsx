@@ -6,11 +6,13 @@ import { addTodo } from "../features/todoSlice";
 const TodoForm = () => {
   const [task, setTask] = useState("");
   const dispatch = useDispatch();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(addTodo(task));
     setTask("");
   };
+
   return (
     <form
       onSubmit={handleSubmit}
